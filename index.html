@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>FORGE OF EMPIRES TOOLS | by Sdrushi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0f1a 0%, #0c1220 50%, #0a0f1a 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', 'Cinzel', 'Georgia', serif;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(18, 25, 40, 0.75);
+            backdrop-filter: blur(2px);
+            border-radius: 2rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(212, 175, 55, 0.1) inset;
+            overflow: hidden;
+        }
+
+        .hero {
+            background: radial-gradient(ellipse at 30% 40%, rgba(30, 40, 60, 0.9), rgba(10, 15, 25, 0.95));
+            padding: 2.5rem 2rem 1.8rem;
+            text-align: center;
+            border-bottom: 2px solid #d4af37;
+            position: relative;
+        }
+
+        .hero::before {
+            content: "⚔️";
+            font-size: 5rem;
+            opacity: 0.1;
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: "🛡️";
+            font-size: 5rem;
+            opacity: 0.1;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            pointer-events: none;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            background: linear-gradient(135deg, #f5e7a3, #d4af37, #b88b1a);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .sub {
+            color: #b9c7d9;
+            font-size: 1.1rem;
+            margin-top: 0.8rem;
+            font-style: italic;
+            border-top: 1px dashed rgba(212, 175, 55, 0.4);
+            display: inline-block;
+            padding-top: 0.6rem;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            padding: 2.5rem 2rem;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            background: rgba(10, 15, 25, 0.7);
+            backdrop-filter: blur(4px);
+            border-radius: 1.5rem;
+            padding: 1.6rem 1.2rem;
+            text-align: center;
+            transition: all 0.25s ease;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+            cursor: pointer;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #d4af37;
+            box-shadow: 0 15px 25px -8px black;
+            background: rgba(20, 28, 45, 0.85);
+        }
+
+        .card-icon {
+            font-size: 5rem;
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+
+        .card h3 {
+            color: #ecd670;
+            font-size: 1.45rem;
+            margin-bottom: 0.7rem;
+            font-weight: 600;
+        }
+
+        .card p {
+            color: #cbd5e6;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        footer {
+            font-size: 0.75rem;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            color: #6a7a8a;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            background: rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 700px) {
+            .features { flex-direction: column; align-items: center; }
+            h1 { font-size: 1.9rem; }
+            .hero { padding: 1.8rem 1rem; }
+            .card { max-width: 100%; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <h1>⚔️ FORGE OF EMPIRES TOOLS ⚔️</h1>
+        <div class="sub">Tools utili che ti semplificheranno la vita su Forge of Empires</div>
+    </div>
+
+    <div class="features">
+        <a href="pirati.html" class="card">
+            <span class="card-icon">🏴‍☠️</span>
+            <h3>INSEDIAMENTO DEI PIRATI</h3>
+            <p>Trova la disposizione migliore degli edifici nell'insediamento dei pirati.</p>
+        </a>
+
+        <a href="foe-optimizer.html" class="card">
+            <span class="card-icon">📊</span>
+            <h3>FOE OPTIMIZER</h3>
+            <p>Confronta statistiche di tutti gli edifici, importa la tua città e il magazzino.</p>
+        </a>
+    </div>
+
+    <footer>
+        © 2025 Sdrushi | Fel Dranghyr
+    </footer>
+</div>
+</body>
+</html>
